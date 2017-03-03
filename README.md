@@ -2,6 +2,22 @@
 
 A minimalistic library for _object hydration_. Useful for data to object reconstruction mechanics.
 
+## Installation
+
+Just add the following configuration to your `build.gradle` file
+
+```gradle
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    compile 'com.github.transferwise:terra:1.0.0'
+}
+```
+
 ## Usage
 
 Given a value object like the following
