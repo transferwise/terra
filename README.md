@@ -31,7 +31,7 @@ class Email {
     
     private final String value;
     
-    ComputerScientist(String aValue) {
+    Email(String aValue) {
         if (!FORMAT.matcher(aValue).matches()) {
             throw new RuntimeException("Email " + aValue + " is incorrect");
         }
