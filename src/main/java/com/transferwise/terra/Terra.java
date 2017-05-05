@@ -17,7 +17,7 @@ public class Terra {
 
     private static Map<String, Object> toMap(Object[] pairs) {
         if (pairs.length % 2 != 0) {
-            throw new RuntimeException("Number of pairs should be even");
+            throw new IllegalArgumentException("Number of pairs should be even");
         }
 
         Map<String, Object> map = new HashMap<>();
@@ -38,7 +38,7 @@ public class Terra {
         for (Map.Entry<String, Object> entry: properties.entrySet()){
             String fieldName = entry.getKey();
             if (!fields.containsKey(fieldName)) {
-                throw new RuntimeException("Field " + fieldName + " does not exist in object");
+                throw new IllegalArgumentException("Field " + fieldName + " does not exist in object");
             }
 
             Field f = fields.get(fieldName);
