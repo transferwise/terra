@@ -1,4 +1,4 @@
-# Terra ![](https://circleci.com/gh/transferwise/terra/tree/master.svg?style=shield&circle-token=d21528d74884febe70e52b220c13b58e763a375b)
+# Terra [![CircleCI](https://circleci.com/gh/transferwise/terra/tree/master.svg?style=shield)](https://circleci.com/gh/transferwise/terra/tree/master)
 
 A minimalistic library for _object hydration_. Useful for data to object reconstruction mechanics.
 
